@@ -11,7 +11,7 @@ const getCurrentUser = async (req: Request, res: Response) => {
     res.json(currentUser);
   } catch (error) {
     console.log(error);
-    return res.status(500).json({ message: "Semething went wrong" });
+    return res.status(500).json({ message: "Something went wrong" });
   }
 };
 
