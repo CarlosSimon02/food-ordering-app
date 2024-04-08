@@ -5,6 +5,7 @@ import express, { Request, Response } from "express";
 import mongoose from "mongoose";
 import myRestaurantRoute from "./routes/MyRestaurantRoute";
 import myUserRoute from "./routes/MyUserRoute";
+import orderRoute from "./routes/OrderRoute";
 import restaurantRoute from "./routes/RestaurantRoute";
 
 mongoose
@@ -28,6 +29,7 @@ app.get("/health", async (req: Request, res: Response) => {
 app.use("/api/my/user", myUserRoute);
 app.use("/api/my/restaurant", myRestaurantRoute);
 app.use("/api/restaurant", restaurantRoute);
+app.use("/api/order", orderRoute);
 
 app.listen(7000, () => {
   console.log("server started on localhost:7000");
