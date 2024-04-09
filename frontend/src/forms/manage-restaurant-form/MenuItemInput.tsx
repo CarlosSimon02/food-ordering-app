@@ -46,7 +46,7 @@ const MenuItemInput = ({
         render={({ field }) => (
           <FormItem>
             <FormLabel className="flex items-center gap-1">
-              Price ($) <FormMessage />
+              Price (£) <FormMessage />
             </FormLabel>
             <FormControl>
               <Input {...field} placeholder="8.00" className="bg-white" />
